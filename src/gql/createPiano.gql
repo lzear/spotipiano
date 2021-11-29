@@ -1,0 +1,9 @@
+mutation createPiano($title: String!, $piano: jsonb!, $song: jsonb) {
+  insert_spotipiano_one(object: { piano: $piano, song: $song, title: $title }) {
+    created_at
+    id
+    piano
+    song
+    title
+  }
+}

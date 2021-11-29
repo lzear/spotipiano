@@ -1,0 +1,9 @@
+query pianos($offset: Int, $limit: Int) {
+  spotipiano(limit: $limit, offset: $offset, order_by: { created_at: desc }) {
+    created_at
+    id
+    piano
+    song
+    title
+  }
+}
